@@ -15,7 +15,7 @@ from sklearn.svm import SVC
 from sklearn import preprocessing
 
 # treningowa
-train = pd.read_table(r'D:\Studia\drugsComTrain_raw.tsv')
+train = pd.read_table(r'filepath')
 # Enkoder
 label_encoder = preprocessing.LabelEncoder()
 train['drugName'] = label_encoder.fit_transform(train['drugName'])
